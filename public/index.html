@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="header">URL SH.RTNE.</div>
+        <form class="form" id="form">
+          <input
+            type="text"
+            name="url"
+            id="url"
+            value=""
+            placeholder="Paste a link to shorten"
+          />
+          <div class="error"></div>
+          <button type="submit" class="btn">Go!</button>
+        </form>
+        <div class="link-wrapper">
+          <h3 class="link-text">Shortened Link</h3>
+          <div class="short-link"></div>
+        </div>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>

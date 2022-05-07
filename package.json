@@ -1,0 +1,19 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.3.1",
+    "nanoid": "^3.3.3",
+    "url-exist": "^3.0.0"
+  }
+}
