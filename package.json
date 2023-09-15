@@ -6,7 +6,7 @@
   "type": "module",
 
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "node index.js"
   },
 
   "dependencies": {
