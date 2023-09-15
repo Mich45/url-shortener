@@ -35,7 +35,12 @@ const validateURL = async (req, res, next) => {
 };
 
 app.get("/", (req, res) => {
+  res.set({
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+});
   res.sendFile(__dirname + "/public/index.html");
+
 });
 
 app.post("/link", validateURL, (req, res) => {
