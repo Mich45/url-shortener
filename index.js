@@ -50,7 +50,7 @@ app.post("/link", validateURL, (req, res) => {
     res.send("An error was encountered! Please try again.");
   }
   // Send the server address with the unique id
-  res.json({ message: `http://localhost:8000/${newURL.id}`, type: "success" });
+  res.json({ message: `/${newURL.id}`, type: "success" });
 });
 
 app.get("/:id", async (req, res) => {

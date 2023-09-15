@@ -7,7 +7,7 @@ const shortenedLink = document.querySelector(".short-link");
 
 const handleSubmit = async () => {
   let url = document.querySelector("#url").value;
-  const response = await fetch("http://localhost:8000/link", {
+  const response = await fetch("/link", {
     headers: {
       "Content-Type": "application/json",
     },
