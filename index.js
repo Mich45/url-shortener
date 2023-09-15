@@ -49,8 +49,9 @@ app.post("/link", validateURL, (req, res) => {
   } catch (err) {
     res.send("An error was encountered! Please try again.");
   }
+  const domain = process.env.PRODUCTION_URL || 'http://localhost:8000/'
   // Send the server address with the unique id
-  res.json({ message: `/${newURL.id}`, type: "success" });
+  res.json({ message: `${domain}${newURL.id}`, type: "success" });
 });
 
 app.get("/:id", async (req, res) => {
