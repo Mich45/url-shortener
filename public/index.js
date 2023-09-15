@@ -5,7 +5,7 @@ const errorDiv = document.querySelector(".error");
 
 const shortenedLink = document.querySelector(".short-link");
 
-const domain = process.env.PRODUCTION_URL || 'http://localhost:3000'
+const domain = 'https://url-shortener-pi-one.vercel.app' || 'http://localhost:3000'
 
 const handleSubmit = async () => {
   let url = document.querySelector("#url").value;

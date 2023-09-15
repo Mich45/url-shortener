@@ -19,6 +19,7 @@ app.use(express.static(__dirname + "/public"));
 mongoose.connect(process.env.MONGO_DB_URI, (err) => {
   if (err) {
     throw err;
+    console.log(err)
   }
   console.log("Database connected successfully");
 });
