@@ -5,9 +5,11 @@ const errorDiv = document.querySelector(".error");
 
 const shortenedLink = document.querySelector(".short-link");
 
+const domain = process.env.PRODUCTION_URL || 'http://localhost:3000'
+
 const handleSubmit = async () => {
   let url = document.querySelector("#url").value;
-  const response = await fetch("/link", {
+  const response = await fetch(`${domain}/link`, {
     headers: {
       "Content-Type": "application/json",
     },
